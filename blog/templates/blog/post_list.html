@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>HomeBrew Dev</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+        <div>
+           {% for post in posts %}
+              <h1><a href="">{{post.title}}</a></h1>
+              <p> Published On: {{post.publish_date}} </p>
+              <p>{{post.text|linebreaksbr}}</p>
+           {% endfor %}
+        </div>
+    </body>
+</html>
